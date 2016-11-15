@@ -1,0 +1,16 @@
+<div ng-controller="menuController">
+	<div ng-repeat="elem in menuList">
+		<table>
+			<tr>
+				<td><b>{{elem.name}}</b></td>	
+			</tr>
+			<tr>
+				<td>{{elem.description}}</td>
+			</tr>
+			<tr>
+				<td>${{elem.cost}}</td>
+			</tr>
+		</table>
+		<br/>
+	</div>
+</div>
