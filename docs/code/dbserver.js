@@ -23,6 +23,14 @@ app.get('/getMenu', function(request, response){
 	});
 });
 
+app.post('/addToMenu', function(request, response){
+	MongoClient.connect(db_url, function(err, db){
+		console.log('Post to database')
+		db.collection('menu').insert(request.query);
+	})
+	response.send();
+})
+
 //Server listens on port 8000.
 app.listen(8000, function() {
   console.log('listening on 8000')

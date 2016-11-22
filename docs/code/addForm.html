@@ -1,0 +1,16 @@
+<div ng-controller="addFormController">
+	<div>
+		<label id="addName">Name of Item: </label>
+		<input type="text" ng-model="name"/>
+	</div>
+	<div>
+		<label id="addCost">Cost (Just the number): </label>
+		<input type="text" ng-model="cost"/>
+	</div>
+	<div>
+		<label id="addDescription">Description: </label>
+		<input type="text" ng-model="description"/>
+	</div>
+	<button ng-click="submit()" ng-disabled="checkSubmit()">Submit</button>
+	<button ng-click="cancel()">Cancel</button>
+</div>

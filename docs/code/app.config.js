@@ -7,4 +7,7 @@ angular.module("restaurantManagementApp")
 			.when("/menu", {
 				templateUrl:"menu.html"
 			})
+			.when("/addForm", {
+				templateUrl:"addForm.html"
+			})
 	}])
