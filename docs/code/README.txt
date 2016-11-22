@@ -10,6 +10,7 @@ npm install http-server -g
 npm install express —save
 npm install mongodb -g
 npm install cors
+npm install 
 
 First we need our http server which will serve 
 our files.
