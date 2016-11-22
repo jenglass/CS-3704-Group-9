@@ -1,4 +1,4 @@
-<div ng-controller="menuController">
+<div ng-controller="menuController" ng-init="pullMenu()">
 	<button ng-style="{'float':'right'}" ng-click="addForm()">Add Item</button>
 	<div ng-repeat="elem in menuList">
 		<table>

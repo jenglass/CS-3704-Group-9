@@ -4,10 +4,19 @@
   "description": "In order for this web-app to work you need to start a webserver in the directory with all of the files: python -m SimpleHTTPServer 12345",
   "main": "angular-route.js",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mongodb": "^2.2.11"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

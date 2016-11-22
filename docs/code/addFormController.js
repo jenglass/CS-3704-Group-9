@@ -20,17 +20,21 @@ angular.module("restaurantManagementApp")
 	* This function submits an item to be added to the database.
 	*/
 	$scope.submit = function(){
-		$http({
-			method: 'POST',
-			url: 'http://localhost:8000/addToMenu',
-			params: {name:$scope.name, cost:$scope.cost, description:$scope.description}
-		}).then(function(response){
-		
-		}, function(err){
-			console.log(err);
-		})
-		
-		$location.path('/menu');
+		if ($scope.name && $scope.cost && $scope.description){
+			$http({
+				method: 'POST',
+				url: 'http://localhost:8000/addToMenu',
+				data: {name:$scope.name, cost:$scope.cost, description:$scope.description}
+			}).then(function(response){
+			
+			}, function(err){
+				console.log(err);
+			})
+			$location.path('/menu');
+		}
+		else {
+			console.error('Error occurred with disabling the button.');
+		}
 	}
 	
 	/**
