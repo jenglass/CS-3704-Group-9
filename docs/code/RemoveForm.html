@@ -1,0 +1,8 @@
+<div ng-controller="RemoveFormController">
+	<div>
+		<label id="RemoveID">ID of Item: </label>
+		<input type="text" ng-model="name"/>
+	</div>
+	<button id="submitButton" ng-click="submit()" ng-disabled="checkSubmit()">Submit</button>
+	<button ng-click="cancel()">Cancel</button>
+</div>
