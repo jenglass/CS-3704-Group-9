@@ -20,7 +20,10 @@ module.exports = function(config) {
     	'./angular-mocks.js',                 // loads our modules for tests
     	'./app.module.js',                                                  // our angular app
     	'./addFormController.js',                                 // our Users factory
-    	'./testAddMenuItem.js' 
+    	'./loginController.js',
+    	'./menuController.js',
+    	'./testAddMenuItem.js',
+    	'./testMenu.js'
     ],
 
 
