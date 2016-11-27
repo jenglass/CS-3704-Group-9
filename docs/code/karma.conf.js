@@ -21,8 +21,10 @@ module.exports = function(config) {
     	'./app.module.js',                                                  // our angular app
     	'./addFormController.js',                                 // our Users factory
     	'./loginController.js',
+    	'./removeFormController.js',
     	'./menuController.js',
     	'./testAddMenuItem.js',
+    	'./testRemoveMenuItem.js',
     	'./testMenu.js'
     ],
 

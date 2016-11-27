@@ -1,7 +1,9 @@
-<div ng-controller="RemoveFormController">
+<div ng-controller="removeFormController">
 	<div>
-		<label id="RemoveID">ID of Item: </label>
-		<input type="text" ng-model="name"/>
+		<label id="RemoveID">Name of Item to Delete: </label>
+		<select id="select" ng-model="selected" ng-disabled="!menuList">
+			<option id="{{elem.name}}-option" ng-repeat="elem in menuList" value="{{elem}}">{{elem.name}}</option>
+		</select>
 	</div>
 	<button id="submitButton" ng-click="submit()" ng-disabled="checkSubmit()">Submit</button>
 	<button ng-click="cancel()">Cancel</button>

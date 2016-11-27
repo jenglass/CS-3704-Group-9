@@ -1,5 +1,5 @@
 angular.module("restaurantManagementApp")
-	.controller("menuController", ["$scope", "$http", "$location", "$interval", function($scope, $http, $location, $interval){
+	.controller("menuController", ["$scope", "$http", "$location", function($scope, $http, $location){
     //Stores the menu
     $scope.menuList;
 
@@ -19,6 +19,10 @@ angular.module("restaurantManagementApp")
 	
 	$scope.addForm = function(){
 		$location.path('/addForm')
+	}
+	
+	$scope.deleteForm = function(){
+		$location.path('/RemoveForm')
 	}
 	
 	}])
