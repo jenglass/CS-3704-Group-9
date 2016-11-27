@@ -10,4 +10,7 @@ angular.module("restaurantManagementApp")
 			.when("/addForm", {
 				templateUrl:"addForm.html"
 			})
+			.when("/RemoveForm", {
+				templateUrl:"RemoveForm.html"
+			})
 	}])
